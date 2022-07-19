@@ -1,0 +1,11 @@
+{
+  "name": "Remove Recommended Videos",
+  "description": "Removes recommended videos on Youtube, increasing your productivity",
+  "version": "1.0",
+  "content_scripts": [{
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["remove.js"],
+      "run_at": "document_start"
+  }],
+  "manifest_version": 3
+}
